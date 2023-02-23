@@ -9,6 +9,8 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
+    region: 'us-west-2',
+    deploymentMethod: 'direct',
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
