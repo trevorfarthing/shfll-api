@@ -57,7 +57,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md,yml}": [
-      "prettier --write . && git add -A ."
+      "prettier --write .",
+      "git add -A ."
     ]
   },
   "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
