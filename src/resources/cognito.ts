@@ -9,7 +9,7 @@ export const userPool = {
 export const userPoolClient = {
   Type: 'AWS::Cognito::UserPoolClient',
   Properties: {
-    UserPoolId: 'shfll-users',
+    UserPoolId: { Ref: 'UserPool' },
     ClientName: 'shfll-user-pool-client',
   },
 };
