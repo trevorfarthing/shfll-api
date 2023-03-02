@@ -1,6 +1,7 @@
 import type { AWS } from '@serverless/typescript';
 
 import hello from '@functions/hello';
+import defineAuthChallenge from '@functions/defineAuthChallenge';
 import { userPool, userPoolClient } from 'src/resources/cognito';
 
 const serverlessConfiguration: AWS = {
@@ -35,7 +36,7 @@ const serverlessConfiguration: AWS = {
       },
     ],
   },
-  functions: { hello },
+  functions: { hello, defineAuthChallenge },
   package: { individually: true },
   custom: {
     esbuild: {
